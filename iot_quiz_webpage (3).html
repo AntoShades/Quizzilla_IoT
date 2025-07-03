@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IoT Quizzilla: Maggi Protection System</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f9;
+      color: #333;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    .option-img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px 0;
+      border-radius: 8px;
+    }
+    h2 {
+      color: #1e1e88;
+    }
+    .wrong {
+      color: #c91e1e;
+      font-weight: bold;
+    }
+    .correct {
+      color: #1e8c1e;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧠 IoT Quizzilla</h1>
+  
+  <div class="card">
+    <h2>Problem Statement</h2>
+    <p>At 3 AM in the boys hostel, someone keeps stealing Maggi from others’ shelves. You finally install an IoT Security System to protect your precious noodles. The next day, the thief gets zapped. Success.</p>
+  </div>
+
+  <div class="card">
+    <h2>Question</h2>
+    <p>Which of the following <strong>sensor combinations</strong> would be the most effective for building this IoT-based anti-theft Maggi system?</p>
+    <ul>
+      <li>A. TCS3200 + RTC Module + ESP8266</li>
+      <li>B. MQ-9 + Capacitive Touch Sensor + Arduino Nano</li>
+      <li class="correct">C. PIR Sensor + Ultrasonic Sensor + NodeMCU</li>
+      <li>D. Hall Effect Sensor + DHT11 + GSM Module</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2 class="correct">✅ Correct Answer: C</h2>
+    <img src="https://components101.com/sites/default/files/components/PIR-Sensor.jpg" alt="PIR Sensor" class="option-img">
+    <p><strong>PIR Sensor</strong> detects motion. <strong>Ultrasonic Sensor</strong> measures how close the thief is to your Maggi. <strong>NodeMCU</strong> sends wireless alerts to your phone. Effective. Clean. Vengeful.</p>
+  </div>
+
+  <div class="card">
+    <h2 class="wrong">❌ Why the other options suck:</h2>
+    
+    <h3>Option A</h3>
+    <img src="https://components101.com/sites/default/files/components/TCS3200-Color-Sensor.jpg" alt="TCS3200 Color Sensor" class="option-img">
+    <p>A uses a <strong>color sensor (TCS3200)</strong> — great if your Maggi glows in RGB. Useless otherwise.</p>
+
+    <h3>Option B</h3>
+    <img src="https://images.theengineeringprojects.com/image/webp/2024/03/mq-9-gas-sensor.jpg.webp?ssl=1" alt="MQ-9 Gas Sensor" class="option-img">
+    <p>B includes an <strong>MQ-9 gas sensor</strong> and a <strong>capacitive touch sensor</strong>. You’d need the thief to both <em>burn the Maggi</em> and <em>sensually touch the shelf</em> for this to work. Weird setup, bro.</p>
+
+    <h3>Option D</h3>
+    <img src="https://components101.com/sites/default/files/components/3144-Hall-Sensor.jpg" alt="Hall Effect Sensor" class="option-img">
+    <p>D uses a <strong>Hall Effect sensor</strong> (detects magnetic fields) and a <strong>DHT11</strong> (temperature/humidity). What are you measuring? Earth's crust movement? This is Maggi, not Geology.</p>
+  </div>
+</body>
+</html>
